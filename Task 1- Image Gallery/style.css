@@ -1,0 +1,212 @@
+body::before {
+  content: "";
+  /* Loads the background image */
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  /* Stretches the pseudo-element to cover the entire body */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* Set your desired opacity here (0.0 to 1.0) */
+  opacity: 0.3; 
+  
+  /* Places the image behind the body's content */
+  z-index: -1; 
+}
+h1 { font-family: Papyrus, fantasy; font-size: 100px; font-style: normal; font-variant: normal; font-weight: 700;
+     padding-top: 80px;
+}
+.header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    
+}
+.header button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 37rem;
+    padding-left: 200px;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    opacity: 0.7;
+    height: 1.5rem;
+}
+.header a{
+    text-decoration: none;
+    color: grey;
+}
+.logop{
+    width: 3rem;
+    height: 3rem;
+    padding-left: 200px;
+}
+.title{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+#para{
+    margin-bottom: 50px;
+}
+.dis{
+    font-size: 1.25rem;
+    text-align: center;  
+}
+.demophoto{
+    width: 100%;
+    height: 400px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+
+}
+.d1{
+    width: 23rem;
+    height: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 2px solid black;
+
+}
+.d1:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+}
+.titleN{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .8rem;
+    margin-top: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.25rem;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.d2{
+    width: 28rem;
+}
+.random{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.random img{
+    border: 2px solid black;
+    width:600px;
+    height: 300px;
+}
+.btn{
+    text-align: center;
+
+}
+#btn2{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    /* Limits the image size to 85% of whatever screen width/height the user has */
+    max-width: 85%;
+    max-height: 85vh; 
+    
+    /* Ensures the image keeps its correct aspect ratio without distortion */
+    object-fit: contain; 
+    
+    /* Optional: Premium styles matching AuraGallery */
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    bottom: 0;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.disc{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disc h3{
+    font-size: 30px;
+    opacity: 0.7;
+}
+.disc p{
+    text-align: center;
+}
+.mid{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.last{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:200px;
+    padding-right: 80px;
+}
+.last a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0 0 10px 10px ;
+}
