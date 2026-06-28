@@ -1,21 +1,21 @@
 body::before {
   content: "";
-  /* Loads the background image */
+ 
   background-image: url('bg2.jpg');
   background-size: cover;
   background-position: center;
   
-  /* Stretches the pseudo-element to cover the entire body */
+  
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   
-  /* Set your desired opacity here (0.0 to 1.0) */
+ 
   opacity: 0.3; 
   
-  /* Places the image behind the body's content */
+ 
   z-index: -1; 
 }
 h1 { font-family: Papyrus, fantasy; font-size: 100px; font-style: normal; font-variant: normal; font-weight: 700;
@@ -152,14 +152,14 @@ p{
     align-items: center;
 }
 #lightbox img {
-    /* Limits the image size to 85% of whatever screen width/height the user has */
+    
     max-width: 85%;
     max-height: 85vh; 
     
-    /* Ensures the image keeps its correct aspect ratio without distortion */
+   
     object-fit: contain; 
     
-    /* Optional: Premium styles matching AuraGallery */
+    
     border-radius: 4px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
