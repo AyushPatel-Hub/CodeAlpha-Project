@@ -211,9 +211,7 @@ p{
     padding: 0 0 10px 10px ;
 }
 
-/* --- RESPONSIVE MEDIA QUERIES --- */
 
-/* Medium devices (Tablets, small laptops, etc.) */
 @media screen and (max-width: 1024px) {
     .links {
         padding-left: 20px;
@@ -230,7 +228,7 @@ p{
     }
 }
 
-/* Small devices (Mobile phones, portrait tablets, etc.) */
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: clamp(2.5rem, 8vw, 100px);
