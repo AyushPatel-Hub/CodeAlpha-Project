@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4; 
+}
+.navbar{
+    margin-top: 20px;
+    margin-left: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 6vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    align-items: center;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+}
+.nav-links a:hover{
+    text-shadow: 0 0 10px #FFC7BB;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+.photo{
+    
+    border: 10px solid white;
+    border-radius:50% ;
+    width: 550px;
+    height: 550px;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+.main{
+
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: start;
+    border-radius: 30px;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.2);
+}
+.photo:hover{
+    box-shadow: 0 0 10px black;
+}
+.name{
+    font-size: 37px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+h1{
+    font-family:sans-serif;
+    color: #1B2A47;
+    margin-bottom: 20px;
+}
+h2{
+    color: #2F2525;
+    margin-top: 0;
+    font-size: 35px;
+    margin-left: 30px;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+}
+.aboutme button{
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.info-links{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 834px;
+}
+.info-links a{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+
+h1, h2, h3 {
+  font-family: "Patrick Hand", cursive;
+}
+
+.cards{
+    margin-top: 150px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    width: 33vw;
+    height: 80vh;
+    border: 2px solid black;
+}
+.school{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.school img{
+    border: 4px solid black;
+}
+.school p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 25px;
+}
+.College{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.College img{
+    border: 4px solid black;
+}
+.College p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 23px;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hobby img{
+    border: 4px solid black;
+}
+.hobby p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 23px;
+}
+.hobby p a{
+    text-decoration: none;
+    color: black;
+    border:2px  solid white;
+    border-radius: 15px;
+}
+.education{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+#heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-decoration: underline;
+}
+.project p{
+    font-size: 20px
+}
+.project h3{
+    font-size: 30px;
+}
+.project h1{
+    font-size: 80px;
+}
+.coding{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px; /* Forces space at the bottom so icons don't spill into the footer */
+    margin-bottom: 40px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    
+}
+.icons i{
+    font-size: 80px;
+}
+.footer{
+    width: 100%;
+    height: 300px ;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

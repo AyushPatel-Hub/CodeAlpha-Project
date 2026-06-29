@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4; 
+}
+.cards{
+    margin-top: 150px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card{
+    border: 2px solid black;
+    width: 100vw;
+    height: 80vh;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.school{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.school img{
+    border: 4px solid black;
+}
+.school p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 25px;
+}
+.College{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.College img{
+    border: 4px solid black;
+}
+.College p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 23px;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hobby img{
+    border: 4px solid black;
+}
+.hobby p{
+    color: rgba(0,0,0,0.8);
+    
+    padding-left:15px ;
+    font-size: 23px;
+}
+.hobby p a{
+    text-decoration: none;
+    color: black;
+    border:2px  solid white;
+    border-radius: 15px;
+}
+#knowme{
+    text-align: center;
+    font-size: 100px;
+}
+.card:hover{
+    box-shadow: 0 0 10px black;
+}
