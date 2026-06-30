@@ -77,7 +77,3 @@ body::before {
     height: auto;
     max-height: 90vh;
 }
-.video-container{
-    width: 80vw;
-    height: 100vh;
-}
