@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* Global Resets and Box-Sizing */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -16,77 +26,109 @@ body::before {
   background-repeat: no-repeat;
   opacity: 0.4; 
 }
-.cards{
-    margin-top: 150px;
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+h1, h2, h3, #knowme {
+  font-family: "Patrick Hand", cursive;
 }
-.card{
-    border: 2px solid black;
-    width: 100vw;
-    height: 80vh;
-    cursor: pointer;
-    margin-bottom: 20px;
+
+#knowme {
+  text-align: center;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  margin: 40px 10px;
+  color: #1B2A47;
 }
-.school{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+#knowme i {
+  margin-left: 10px;
 }
-.school img{
-    border: 4px solid black;
+
+/* Cards Container */
+.cards {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
 }
-.school p{
-    color: rgba(0,0,0,0.8);
-    
-    padding-left:15px ;
-    font-size: 25px;
+
+/* Card Styling */
+.card {
+  border: 2px solid #1B2A47;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.College{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.College img{
-    border: 4px solid black;
+
+.card h1 {
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  color: #1B2A47;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-.College p{
-    color: rgba(0,0,0,0.8);
-    
-    padding-left:15px ;
-    font-size: 23px;
+
+.card h2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: #2F2525;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.hobby{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+/* Responsive Image Handling */
+.card img {
+  border: 4px solid #1B2A47;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
-.hobby img{
-    border: 4px solid black;
+
+/* Paragraphs */
+.school p, .College p, .hobby p {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  text-align: justify;
+  margin: 15px 0 0 0;
+  padding: 0 10px;
 }
-.hobby p{
-    color: rgba(0,0,0,0.8);
-    
-    padding-left:15px ;
-    font-size: 23px;
+
+.card p a {
+  text-decoration: none;
+  color: #1B2A47;
+  font-weight: bold;
+  border-bottom: 2px solid #1B2A47;
+  padding-bottom: 1px;
 }
-.hobby p a{
-    text-decoration: none;
-    color: black;
-    border:2px  solid white;
-    border-radius: 15px;
-}
-#knowme{
-    text-align: center;
-    font-size: 100px;
-}
-.card:hover{
-    box-shadow: 0 0 10px black;
+
+/* Responsive Overrides */
+@media (max-width: 600px) {
+  .cards {
+    margin-top: 30px;
+    gap: 25px;
+  }
+  .card {
+    padding: 25px 15px;
+    border-radius: 20px;
+  }
 }
