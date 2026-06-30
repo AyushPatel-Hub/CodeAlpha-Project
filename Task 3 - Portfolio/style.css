@@ -4,7 +4,24 @@
 * {
   box-sizing: border-box;
 }
-
+#open-sidebar-menu{
+  font-size: 1.5em;
+    position: fixed;
+    right: 0;
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.8em;
+    z-index: 10;
+}
+#close-sidebar-menu{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+}
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +49,7 @@ h1, h2, h3 {
 }
 
 /* Navbar */
-.navbar {
+#navbar {
   margin: 20px auto;
   text-align: center;
   display: flex;
@@ -67,6 +84,7 @@ h1, h2, h3 {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   font-weight: 500;
   transition: all 0.3s ease;
+  opacity: 0.7;
 }
 
 .nav-links a:hover {
@@ -422,11 +440,23 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .navbar {
+  #navbar {
+    position: fixed;
+        top:0;
+        right:-100%;
+        height: 100vh;
+        width: min(15em,100%);
+        z-index: 10;
+        transition: right 300ms ease-out;
     width: 95%;
     border-radius: 12px;
   }
-
+  #navbar.show{
+    right:0;
+  }
+ #open-sidebar-menu,#close-sidebar-menu{
+  display: block;
+ }
   .nav-links {
     gap: 10px;
   }
